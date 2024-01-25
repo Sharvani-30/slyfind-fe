@@ -171,7 +171,7 @@ ul.nav-items{
   margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
-  background-image: url(Untitled.png);
+  background-image: url("Untitled.png");
   background-size: cover;
 }
 
