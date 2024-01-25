@@ -37,9 +37,7 @@ body {
     flex-direction:row; 
     align-items: center;
 }
-/* .navbar li {
-  padding: 15px;
-} */
+
 .Navbar__Link {
   padding-right: 8px;
 }
@@ -63,10 +61,7 @@ img{
   opacity: 0;
   margin-left: 10px;
 }
-/* #down {
-  background-color: black;
-  border-radius: 2px;
-} */
+
 
 .header {
   text-align: center;
