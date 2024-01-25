@@ -18,6 +18,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  height: 80px;
 }
 
 .navbar ul {
@@ -36,9 +37,9 @@ body {
     flex-direction:row; 
     align-items: center;
 }
-.navbar li {
+/* .navbar li {
   padding: 15px;
-}
+} */
 .Navbar__Link {
   padding-right: 8px;
 }
@@ -81,6 +82,21 @@ img{
 .slide-in {
   transform: translateY(-50px);
   animation: slideIn 1s ease-in-out forwards;
+}
+
+.list ul li{
+  padding: 15px;
+}
+.slynhb{
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+}
+.sly .mini-logo-{
+  margin-top: 10px;
+}
+ul.nav-items{
+  padding-left: 40px;
 }
 
 @keyframes fadeIn {
@@ -151,11 +167,16 @@ img{
 }
 
 .see {
+  margin-top: 60px;
+  margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
+  background-image: url(Untitled.png);
+  background-size: cover;
 }
 
 .slyfind {
+  margin-right: 350px;
   margin-top: 50px;
   font-family: arial;
   color: black;
@@ -179,8 +200,6 @@ img{
   height: auto;
   width: 100px;
 }
-
-
 
 .pp {
   color: black ;
