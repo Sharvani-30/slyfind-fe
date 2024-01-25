@@ -11,7 +11,7 @@ body {
 /* ------------------------------ */
 
 .navbar {
-  background-color:#0a2472;
+  background-color:#07bac6;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +42,15 @@ body {
 .navbar li {
   padding: 15px;
 }
-
+.navbar li {
+  padding: 15px;
+}
+.Navbar__Link {
+  padding-right: 8px;
+}
+.Navbar__Link-toggle {
+  display: none;
+}
 
 img{
   display: block;
