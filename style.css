@@ -162,7 +162,6 @@ ul.nav-items{
 }
 
 .see {
-  margin-top: 60px;
   margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
@@ -171,7 +170,7 @@ ul.nav-items{
 }
 
 .slyfind {
-  margin-right: 350px;
+  margin-right: 750px;
   margin-top: 50px;
   font-family: arial;
   color: black;
