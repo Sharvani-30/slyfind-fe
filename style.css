@@ -58,7 +58,7 @@ img{
 .navbar a {
   text-decoration: none;
   color: white;
-  opacity: 0;
+  /* opacity: 0; */
   margin-left: 10px;
 }
 
@@ -93,25 +93,6 @@ img{
 ul.nav-items{
   padding-left: 40px;
 }
-
-@keyframes fadeIn {
-  to {
-      opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  to {
-      transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  to {
-      transform: translateX(-10px);
-  }
-}
-
 
 /* ----------------------------------------- */
 .s{
@@ -258,35 +239,50 @@ ul.nav-items{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
-  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  border-radius: 30px;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
-  animation: fadeIn 1s ease-in-out 0.2s;
-  aspect-ratio: 1 / 1;
+  /* animation: fadeIn 1s ease-in-out 0.2s; */
+  /* animation: gradient-animation 5s ease infinite; */
+  /* animation: pulse 2s ease-in-out infinite; */
+  /* background-image: linear-gradient(45deg, #f0f, #0ff 25%, #f0f 50%, #0ff 75%, #f0f);
+  animation: stripes 5s linear infinite; */
+  /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  animation: shimmer 2s linear infinite; */
+  /* background-color: #f0f;
+  animation: grow 2s ease-in-out infinite; */
+  /* background-repeat: no-repeat;
+  animation: sparkle 5s linear infinite; */
+  background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5);
+  background-size: 200% 200%;
+  animation: backgroundAnimation 8s infinite;
 }
-
-
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animated-box {
+  width: 200px;
+  height: 100px;
+  background-repeat: repeat-y;
+  animation: rain 2s linear infinite; 
+}
 h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  animation: slideIn 1s ease-in-out 0.4s;
 }
 
 p {
   font-size: 0.9em;
-  animation: slideIn 1s ease-in-out 0.6s;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes slideIn {
-  0% { transform: translateY(20px); }
-  100% { transform: translateY(0); }
 }
 
 /* review boxes */

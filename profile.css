@@ -6,7 +6,6 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  /* overflow: hidden; */
 }
 /* ------------------------------ */
 .navbar {
@@ -61,7 +60,6 @@ img{
 .navbar a {
   text-decoration: none;
   color: white;
-  opacity: 0;
   margin-left: 10px;
 }
 
@@ -70,16 +68,6 @@ img{
   text-align: center;
   padding: 100px;
   color: black;
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-.slide-in {
-  transform: translateY(-50px);
-  animation: slideIn 1s ease-in-out forwards;
 }
 
 .list ul li{
@@ -97,30 +85,7 @@ ul.nav-items{
   padding-left: 40px;
 }
 
-@keyframes fadeIn {
-  to {
-      opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  to {
-      transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  to {
-      transform: translateX(-10px);
-  }
-}
  
-#down {
-  background-color: black;
-  border-radius: 2px;
-}
-
-
 /* ------------------------------------------------ */
 .profiles-container {
   display: flex;
@@ -173,5 +138,5 @@ opacity: 0.7;
 }
 
 .check-git:hover{
-  
+  display: block;
 }
