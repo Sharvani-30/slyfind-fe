@@ -86,7 +86,10 @@ ul.nav-items{
   padding-left: 40px;
 }
 
- 
+#down{
+  background-color: #001c55;
+  border-radius: 10px;
+}
 /* ------------------------------------------------ */
 .profiles-container {
   display: flex;

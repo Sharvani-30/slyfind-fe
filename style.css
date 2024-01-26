@@ -78,6 +78,10 @@ ul.nav-items{
   padding-left: 40px;
 }
 
+#down{
+  background-color: #001c55;
+  border-radius: 10px;
+}
 /* ----------------------------------------- */
 .s{
   margin-top: 100px;
