@@ -241,7 +241,7 @@ ul.nav-items{
           <li><i class="fa-solid fa-house" style="color: black;"></i><a href="index.html"  >Home</a> </li>
           <li><i class="fa-solid fa-circle-user" style="color: black;"> </i><a href="profile.html" >About Us</a> </li>
           <li><i class="fa-solid fa-file" style="color: black;"> </i><a href="#" >Docs</a> </li>
-          <li><i class="fa-solid fa-chart-simple" style="color: black;"> </i><a href="index.html#" onclick="scrollToscroll()">Features</a> </li>
+          <li><i class="fa-solid fa-chart-simple" style="color: black;"> </i><a href="index.html#" onclick="scrollToFeatures()">Features</a> </li>
           <li><i class="fa-regular fa-file" style="color: black;"> </i><a href="#" >References</a> </li>
           <li><i class="fa-solid fa-address-card" style="color: black;"> </i><a href="feedback.html">Feedback</a> </li>
           <li style="display: flex; justify-content: center; " ><a href="#" ><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> </li>
@@ -270,17 +270,8 @@ ul.nav-items{
     document.getElementById("contactForm").addEventListener("submit", function(event) {
       event.preventDefault();
     });
-    function scrollToscroll() {
-      // Redirect to index.html
-      window.location.href = "index.html";
-
-      // Scroll to the 'features' section after a short delay (adjust the delay as needed)
-      setTimeout(function() {
-        var featuresSection = document.getElementById('scroll');
-        if (featuresSection) {
-          featuresSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 500);
+    function scrollToFeatures() {
+      window.location.href = "index.html#scroll";
     }
  </script>
 </body>
