@@ -296,7 +296,8 @@ ul.nav-items{
   box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
   padding: 20px;
   text-align: center;
-  background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5);
+  background-color: white;
+  /* background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5); */
   background-size: 200% 200%;
   animation: backgroundAnimation 8s infinite;
 }
