@@ -197,10 +197,10 @@ ul.nav-items{
   margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
-  background-image: url('bg-body.png'); 
+  /* background-image: url('bg-body.png'); 
   background-size: 45%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .slyfind {
@@ -209,7 +209,15 @@ ul.nav-items{
   font-family: arial;
   color: black;
 }
-
+.slynbg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bg{
+  height: 300px;
+  width: 300px;
+}
 .check {
   font-size: 20px;
   color: black;
@@ -299,7 +307,7 @@ ul.nav-items{
   background-color: white;
   /* background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5); */
   background-size: 200% 200%;
-  animation: backgroundAnimation 8s infinite;
+  /* animation: backgroundAnimation 8s infinite; */
 }
 @keyframes backgroundAnimation {
   0% {
@@ -347,11 +355,12 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: white;
     margin-bottom: 15px;
-    background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    /* background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5);
     background-size: 200% 200%;
-    animation: backgroundAnimation 8s infinite;
+    animation: backgroundAnimation 8s infinite; */
   }
   
   .image-containers {
