@@ -152,6 +152,7 @@ ul.nav-items{
   }
 }
 
+
 /* ----------------------------------------- */
 .s{
   margin-top: 100px;
@@ -196,8 +197,6 @@ ul.nav-items{
   margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
-  background-image: url("Untitled.png");
-  background-size: cover;
 }
 
 .slyfind {
