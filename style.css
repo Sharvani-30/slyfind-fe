@@ -197,6 +197,10 @@ ul.nav-items{
   margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
+  background-image: url('bg-body.png'); 
+  background-size: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slyfind {
