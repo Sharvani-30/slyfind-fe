@@ -324,7 +324,7 @@ p {
 
 /* review boxes */
 
-.par {
+.review-heading {
   color: black;
   font-size: larger;
   padding-left: 20px;
@@ -337,11 +337,16 @@ p {
   
   .boxes {
     width: 30%;
+    border-radius: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #f2f2f2;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5);
+    background-size: 200% 200%;
+    animation: backgroundAnimation 8s infinite;
   }
   
   .image-containers {
