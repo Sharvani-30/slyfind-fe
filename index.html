@@ -29,7 +29,7 @@
                 <li><i class="fa-solid fa-chart-simple" style="color: black;"> </i><a href="#scroll">Features</a> </li>
                 <li><i class="fa-regular fa-file" style="color: black;"> </i><a href="#" >References</a> </li>
                 <li><i class="fa-solid fa-address-card" style="color: black;"> </i><a href="feedback.html">Feedback</a> </li>
-                <li style="display: flex; justify-content: center;"><a href="#" id="popup-trigger"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> </li>
+                <li style="display: flex; justify-content: center;"><a id="popup-trigger"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> </li>
 
             </ul>
         </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="download" >
                 <!-- <h1 style="color: white;">DOWNLOAD</h1> -->
-                <a  id="popup-trigger"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> 
+                <a  id="popup-trigger-box"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> 
             </div>
         </div> 
     </div>
@@ -172,9 +172,18 @@
         document.getElementById('popup-container').style.display = 'flex';
             });
 
-        // function closePopup() {
-        // document.getElementById('popup-container').style.display = 'none';
-        //     }
+            document.getElementById('popup-trigger-box').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('popup-container').style.display = 'flex';
+        });
+
+        function closePopup() {
+            document.getElementById('popup-container').style.display = 'none';
+            }
+        document.getElementById('popup-trigger-box').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('popup-container').style.display = 'flex';
+            });
     </script>
 </body>
 </html>
