@@ -37,11 +37,13 @@
             <div class="popup-box">
               <span class="close-btn" onclick="closePopup()">×</span>
               <h2>Get Slyfind for Windows</h2>
+              <a class="mini-logo-" style="font-weight: bolder; display: block; max-width: 100%;"><img src="mini-logo.png" alt="yes"  style="background-size: cover; transform: scale(1.3); height: 60px; width: 60px; padding-left: 140px;"></a>
               <p>For Windows 11/10 64-bit.</p>
               <form>
-                <p>Help make Slyfind better by automatically sending usage statistics and crash reports. <a href="terms.html">What are crash reports?</a></p>
-                <p>By downloading Slyfind, you agree to the <a href="google-tos.html">Google Terms of Service</a> and <a href="chrome-tos.html">Chrome and ChromeOS Additional Terms of Service</a>.</p>
-                <button type="submit">Accept and Install</button>
+                <!-- <p>Help make Slyfind better by automatically sending usage statistics and crash reports. <a href="terms.html">What are crash reports?</a></p> -->
+                <p style="color: grey; font-size: small;">By downloading Slyfind, you agree to the <a href="#">Slyfind Terms of Service</a>.</p>
+                <!-- <button type="submit">Accept and Install</button> -->
+                <p style="padding-left:140px"><button class="bn55"><span class="bn55span">Install</span></button></p>
               </form>
             </div>
         </div>
@@ -54,8 +56,9 @@
                 <h3>Detect , Warn , Secure</h3>
                 <h3>Your Guardian against digital shadows</h3>
             </div>
-            <div class="download">
-                <a href="#" id="popup-trigger"><button ><span><i class="fa-solid fa-download" style="color: white;"> </i> DOWNLOAD</span></button></a>
+            <div class="download" >
+                <!-- <h1 style="color: white;">DOWNLOAD</h1> -->
+                <a  id="popup-trigger"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> 
             </div>
         </div> 
     </div>
@@ -76,7 +79,7 @@
                 <img src="memory-analysis.png" alt="memory-analysis" style="width: 300px; height: 300px; background-size: cover; ">
             </div>
             <div class="grid-items" style="display: flex; justify-content: center; align-items: center;">
-                <img src="networkintrusiondetection.png" alt="ntd" style="width: 300px; height: 300px; background-size: cover; ">
+                <img src="networkintrusiondetection.png" alt="nid" style="width: 300px; height: 300px; background-size: cover; ">
             </div>
             <div class="grid-item">
                 <h1>Network Intrusion Detection</h1>
@@ -164,14 +167,14 @@
         function closePopup() {
             document.getElementById('popup-container').style.display = 'none';
             }
-            document.getElementById('popup-trigger').addEventListener('click', function(event) {
+        document.getElementById('popup-trigger').addEventListener('click', function(event) {
         event.preventDefault(); 
         document.getElementById('popup-container').style.display = 'flex';
             });
 
-        function closePopup() {
-        document.getElementById('popup-container').style.display = 'none';
-            }
+        // function closePopup() {
+        // document.getElementById('popup-container').style.display = 'none';
+        //     }
     </script>
 </body>
 </html>
