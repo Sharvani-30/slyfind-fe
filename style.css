@@ -19,6 +19,7 @@ body {
   top: 0;
   width: 100%;
   height: 80px;
+  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -232,18 +233,18 @@ ul.nav-items{
 }
 
 .download {
-  width: 90%;
-  height: 15%;
+  width: 50%;
   display: flex;
   justify-content:center;
   align-items: center;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 50px;
   margin-left: 70px;
   padding-left: 5px;
   padding-right: 5px;
   /* background-color: #0a2472; */
   border-radius: 30px;
+  z-index: 1;
 }
 
 
@@ -262,15 +263,16 @@ ul.nav-items{
 }
 
 .see {
-  margin-bottom: 140px;
   display: flex;
   justify-content: space-evenly;
-  background-image: url('bg-body.png'); 
-  background-size: 45%;
+  height: 700px;
+}
+.navnsly{
+  background-image: url(bg-body.png); 
+  background-size: 102%;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .slyfind {
   margin-right: 750px;
   margin-top: 50px;
