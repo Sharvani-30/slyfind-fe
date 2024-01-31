@@ -268,7 +268,7 @@ ul.nav-items{
   height: 700px;
 }
 .navnsly{
-  background-image: url(bg-body.png); 
+  background-image: url("images/bg-body.png"); 
   background-size: 102%;
   background-position: center;
   background-repeat: no-repeat;
@@ -331,7 +331,7 @@ ul.nav-items{
   height: 300px;
   width: 600px;
   margin-top: 80px;
-  background-image: url(th3.jpg);
+  background-image: url(images\\th3.jpg);
   background-size: cover;
   float: right;
 }
@@ -375,9 +375,7 @@ ul.nav-items{
   padding: 20px;
   text-align: center;
   background-color: white;
-  /* background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5); */
   background-size: 200% 200%;
-  /* animation: backgroundAnimation 8s infinite; */
 }
 @keyframes backgroundAnimation {
   0% {
@@ -428,9 +426,6 @@ p {
     background-color: white;
     margin-bottom: 15px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-    /* background: linear-gradient(45deg, #a9d6e5, #a8dadc, #2c7da0 , #a9d6e5);
-    background-size: 200% 200%;
-    animation: backgroundAnimation 8s infinite; */
   }
   
   .image-containers {
@@ -449,7 +444,7 @@ p {
   }
 
 /* Responsive Styles */
-
+/* 
 @media only screen and (max-width: 400px) {
   .slyfind .s{
     font-size: large;
@@ -547,7 +542,7 @@ p {
     top: 0;
     width: 100%;
   }
-}
+} */
 /* ------------------------------------ */
 .popup-container {
   display: none;
