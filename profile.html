@@ -24,14 +24,25 @@
                 <li><i class="fa-solid fa-house" style="color: black;"></i><a href="index.html"  >Home</a> </li>
                 <li><i class="fa-solid fa-circle-user" style="color: black;"> </i><a href="profile.html" >About Us</a> </li>
                 <li><i class="fa-solid fa-file" style="color: black;"> </i><a href="#" >Docs</a> </li>
-                <li><i class="fa-solid fa-chart-simple" style="color: black;"> </i><a href="index.html#scroll" >Features</a> </li>
-                <li><i class="fa-regular fa-file" style="color: black;"> </i><a href="#" >References</a> </li>
-                <li><i class="fa-solid fa-address-card" style="color: black;"> </i><a href="feedback.html">Feedback</a> </li>
-                <li style="display: flex; justify-content: center; " ><a href="#" ><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> </li>
+                <li><i class="fa-solid fa-chart-simple" style="color: black;"> </i><a href="index.html#scroll">Features</a> </li>
+                <li style="display: flex; justify-content: center;"><a id="popup-trigger"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> </li>
 
             </ul>
         </div>
-        <ul></ul>
+        <div class="popup-container" id="popup-container">
+            <div class="popup-box">
+              <span class="close-btn" onclick="closePopup()">×</span>
+              <h2>Get Slyfind for Windows</h2>
+              <a class="mini-logo-" style="font-weight: bolder; display: block; max-width: 100%;"><img src="mini-logo.png" alt="yes"  style="background-size: cover; transform: scale(1.3); height: 60px; width: 60px; padding-left: 140px;"></a>
+              <p>For Windows 11/10 64-bit.</p>
+              <form>
+                <!-- <p>Help make Slyfind better by automatically sending usage statistics and crash reports. <a href="terms.html">What are crash reports?</a></p> -->
+                <p style="color: grey; font-size: small;">By downloading Slyfind, you agree to the <a href="#">Slyfind Terms of Service</a>.</p>
+                <!-- <button type="submit">Accept and Install</button> -->
+                <p style="padding-left:140px"><button class="bn55"><span class="bn55span">Install</span></button></p>
+              </form>
+            </div>
+        </div>
     </nav>
     <br><br><br><br><br>
     <div class="profiles-container">
@@ -84,6 +95,27 @@
             </div>
         </div>
     </div>
-    <!-- <script src="profile.js"></script> -->
+   <script>
+        document.getElementById('popup-trigger').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('popup-container').style.display = 'flex';
+        });
+
+        function closePopup() {
+            document.getElementById('popup-container').style.display = 'none';
+            }
+        document.getElementById('popup-trigger').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('popup-container').style.display = 'flex';
+            });
+
+        function closePopup() {
+            document.getElementById('popup-container').style.display = 'none';
+            }
+        document.getElementById('popup-trigger-box').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('popup-container').style.display = 'flex';
+            });
+   </script>
 </body>
 </html>
