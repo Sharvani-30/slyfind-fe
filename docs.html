@@ -8,100 +8,163 @@
         <title>Docs</title>
     </head>
     <body>
-        <header>
-            <h1>Slyfind - hidden malware detection Application</h1>
-        </header>
-        <main>
-            <section id="description">
-                <p>Slyfind stands out for its speed in obfuscated malware detection, by focusing on specific digital artifacts within volatile memory. This targeted approach enables faster detection of obfuscated malware.</p>
-            </section>
-    
-            <section id="functionalities">
-                
-                    <h4>Obfuscated Malware Detection</h4>
-                    <p>Obfuscated malware refers to malicious software or code that has been intentionally obscured or obfuscated to evade detection by security tools and analysts. Obfuscation techniques are used to conceal the true intent and functionality of the malware, making it more difficult to analyze and detect.Its significances are Enhanced Security Posture, Prevention of Data Loss, Protection Against Advanced Threats.</p>
-                    <h4>Network Intrusion Detection</h4>
-                    <p>Network intrusion refers to unauthorized access, malicious activity, or security breaches within a computer network. It involves attackers gaining unauthorized access to network resources, compromising system integrity, stealing sensitive data, or disrupting network operations.Detecting network intrusion is critical.It helps Network Security Monitoring, Real-time Alerts, Threat Detection.</p>
-                    <h4>PDF Evasive-Malware Detection</h4>
-                    <p>PDF malware refers to malicious software or code that is embedded within PDF (Portable Document Format) files. Cybercriminals often use PDF files as a vector to distribute malware due to their widespread use in business environments and the inherent trust users place in document formats.So it becomes a necessity to perform malware detection.</p>
-                    <h4>Memory Forensics</h4>
-                    <p>Slyfind is designed to detect malware not only within our system but also across other systems, provided a memory dump is available. It aids in performing Root Cause Analysis, Forensic Investigations. This helps investigators understand the scope and nature of an incident and take appropriate actions to contain and remediate it.</p>
-                
-            </section>
-    
-            <div id="flowchat">
-                <h3>Memory Analysics Workflow</h3>
-                <img src="images\memory_analysis_workflow.png" alt="Memory Analysics Workflow">
-                <h3>Intrusion detection Workflow</h3>
-                <img src="images\Intrusion_Detection_Workflow.png" alt="Intrusion detection Workflow">
-                <h3>PDF malware detection Workflow</h3>
-                <img src="images\PDF_workflow.png" alt="PDF malware detection Workflow">
-            </div>
-    
-            <section id="getting-started">
-                <h2>Getting Started</h2>
-                <h4>Dependencies</h4>
-                <p>Make sure you have installed all of the following prerequisites on your development machine:</p>
-                <ul>
-                    <li>Java-<a href="https://jdk.java.net/archive/">Download & Install Java</a></li>
-                    <li>Python 3.10 or above- <a href="https://www.python.org/downloads/">Download & Install Python</a></li>
-                    <li>Wireshark- <a href="https://www.wireshark.org/download.html">Download & Install Wireshark</a></li>
-                    <li>Node.js -<a href="https://nodejs.org/en/download/">Download & Install Node.js</a></li>
-                    <li>Make sure to add paths to environment variables</li>
-                </ul>
-            </section>
 
-            <div class="steps">
-                <h2>Run locally</h2>
-                <h4>1.Clone the project</h4>
-                <p style="margin-left: 35px;">bash git clone https://github.com/kmitofficial/AIToolForMalwareDetection-G96-PS23.git</p>
-                <h4>2.Add symbols</h4>
-                <p style="margin-left: 35px;">slyfind-application\v3\volatility3\symbols</p>
-                <p>download <a href="">symbols</a> and paste the zip in symbols folder (slyfind-application\v3\volatility3\symbols)</p>
-                <h4>3.Go to the project directory</h4>
-                <p style="margin-left: 35px;">cd slyfind-application</p>
-                <h4>4.Install dependencies</h4>
-                <p style="margin-left: 35px;">npm install</p>
-                <h4>5.Download the requirements</h4>
-                <p style="margin-left: 35px;">python -m pip install -r requirements.txt</p>
-                <h4>6.Download pkl files given in website</h4>
-                <p style="margin-left: 35px;">will be added soon :)</p>
-                <h4>7.Start the application</h4>
-                <p style="margin-left: 35px;">npm start</p>
+        <nav class="navbar">
+            <div class="slynhb">
+                <ul class="sly">
+                    <li><a class="mini-logo-" style="font-weight: bolder; display: block; max-width: 100%; font-size: 25px;"><img src="images\mini-logo.png" alt="yes"  style="background-size: cover; transform: scale(0.8); height: 60px; width: 60px;"></a></li>
+                    <li class="text-slyfind"><a href="#" style="font-weight: bolder; font-size:30px;">SLYFIND</a></li>
+                </ul>
             </div>
+            <div class="Navbar__Link Navbar__Link-toggle">
+                <i class="fas fa-bars" style="font-size: 30px; color: black; "></i>
+            </div>
+            <div class="list">
+                <ul class="nav-items">
+                    <li><i class="fa-solid fa-house" style="color: black;"></i><a href="index.html"  >Home</a> </li>
+                    <li><i class="fa-solid fa-circle-user" style="color: black;"> </i><a href="profile.html" >About Us</a> </li>
+                    <li><i class="fa-solid fa-file" style="color: black;"> </i><a href="docs.html" >Docs</a> </li>
+                    <li><i class="fa-solid fa-chart-simple" style="color: black;"> </i><a href="index.html#scroll">Features</a> </li>
+                    <li style="display: flex; justify-content: center;"><a id="popup-trigger"><button class="bn54"><span class="bn54span"><i class="fa-solid fa-download" style="color: black;"> </i> DOWNLOAD</span></button></a> </li>
     
-            <section id="team">
-                <h2>Slyfind Team</h2>
-                <ul>
-                    <li>Akshay Nagamalla  <a href="https://github.com/AkshayNagamalla">@AkshayNagamalla</a></li>
-                    <li>Darsh Agrawal  <a href="https://github.com/DarshAgrawal14">@DarshAgrawal14</a></li>
-                    <li>Mohammed Areeb Akhter  <a href="github.com/Areeb-Ak">@Areeb-Ak</a></li>
-                    <li>Ayush Reddy Pasham   <a href="https://github.com/RahZero0">@RahZero0</a></li>
-                    <li>Sharvani K   <a href="https://github.com/Sharvani-30">@Sharvani-30</a></li>
-                    <li>Srinidhi Chodavarapu   <a href="https://github.com/Srinidhi-Chodavarapu">@Srinidhi-Chodavarapu</a></li>
                 </ul>
-            </section>
+            </div>
+            <div class="popup-container" id="popup-container">
+                <div class="popup-box">
+                  <span class="close-btn" onclick="closePopup()">×</span>
+                  <h2>Get Slyfind for Windows</h2>
+                  <a class="mini-logo-" style="font-weight: bolder; display: block; max-width: 100%;"><img src="images\mini-logo.png" alt="yes"  style="background-size: cover; transform: scale(1.3); height: 60px; width: 60px; padding-left: 140px;"></a>
+                  <p>For Windows 11/10 64-bit.</p>
+                  <form>
+                    <p style="color: grey; font-size: small;">By downloading Slyfind, you agree to the <a href="#">Slyfind Terms of Service</a>.</p>
+                    <p style="padding-left:140px"><button class="bn55"><span class="bn55span">Install</span></button></p>
+                  </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <br><br><br><br>
+
+        
+            <h1 style="text-align: center; margin-bottom: 20px;">Slyfind - hidden malware detection Application</h1>
+       
+        <main>
+              <div class="to-pad" style="padding: 50px ;">
+                <section id="description">
+                    <p>Slyfind stands out for its speed in obfuscated malware detection, by focusing on specific digital artifacts within volatile memory. This targeted approach enables faster detection of obfuscated malware.</p>
+                </section>
+        
+                <section id="functionalities">
+                    
+                        <h4>Obfuscated Malware Detection</h4>
+                        <p>Obfuscated malware refers to malicious software or code that has been intentionally obscured or obfuscated to evade detection by security tools and analysts. Obfuscation techniques are used to conceal the true intent and functionality of the malware, making it more difficult to analyze and detect.Its significances are Enhanced Security Posture, Prevention of Data Loss, Protection Against Advanced Threats.</p>
+                        <h4>Network Intrusion Detection</h4>
+                        <p>Network intrusion refers to unauthorized access, malicious activity, or security breaches within a computer network. It involves attackers gaining unauthorized access to network resources, compromising system integrity, stealing sensitive data, or disrupting network operations.Detecting network intrusion is critical.It helps Network Security Monitoring, Real-time Alerts, Threat Detection.</p>
+                        <h4>PDF Evasive-Malware Detection</h4>
+                        <p>PDF malware refers to malicious software or code that is embedded within PDF (Portable Document Format) files. Cybercriminals often use PDF files as a vector to distribute malware due to their widespread use in business environments and the inherent trust users place in document formats.So it becomes a necessity to perform malware detection.</p>
+                        <h4>Memory Forensics</h4>
+                        <p>Slyfind is designed to detect malware not only within our system but also across other systems, provided a memory dump is available. It aids in performing Root Cause Analysis, Forensic Investigations. This helps investigators understand the scope and nature of an incident and take appropriate actions to contain and remediate it.</p>
+                    
+                </section>
+        
+                <div id="flowchat">
+                    <h3>Memory Analysics Workflow</h3>
+                    <img src="images\memory_analysis_workflow.png" alt="Memory Analysics Workflow">
+                    <h3>Intrusion detection Workflow</h3>
+                    <img src="images\Intrusion_Detection_Workflow.png" alt="Intrusion detection Workflow">
+                    <h3>PDF malware detection Workflow</h3>
+                    <img src="images\PDF_workflow.png" alt="PDF malware detection Workflow">
+                </div>
+        
+                <section id="getting-started">
+                    <h2>Getting Started</h2>
+                    <h4>Dependencies</h4>
+                    <p>Make sure you have installed all of the following prerequisites on your development machine:</p>
+                    <ul>
+                        <li>Java-<a href="https://jdk.java.net/archive/">Download & Install Java</a></li>
+                        <li>Python 3.10 or above- <a href="https://www.python.org/downloads/">Download & Install Python</a></li>
+                        <li>Wireshark- <a href="https://www.wireshark.org/download.html">Download & Install Wireshark</a></li>
+                        <li>Node.js -<a href="https://nodejs.org/en/download/">Download & Install Node.js</a></li>
+                        <li>Make sure to add paths to environment variables</li>
+                    </ul>
+                </section>
     
-            <section id="acknowledgements">
-                <h2>Acknowledgements</h2>
-                <ul>
-                    <li>We would like to acknowledge the <a href="https://www.unb.ca/cic/about/index.html">Canadian institute of Cyber Security</a> (CIC) for their valuable open-source datasets, which were pivotal in the development of this project.</li>
-                    <li>We want to express our appreciation to the creators and maintainers of the <a href="https://volatilityfoundation.org/">Volatility3 framework </a>for their invaluable open-source contribution. </li>
-                    <li>We want to express our appreciation to the developers of <a href="https://www.wireshark.org/">Wireshark</a> for providing their powerful network protocol analyzer as open-source software.</li>
-                    <li>We would like to express our heartfelt gratitude to Sripooja <a href="https://github.com/msripooja">@msripooja</a> ma'am for her invaluable guidance, support, and mentorship throughout the duration of this project.</li>
-                </ul>
-                
-            </section>
-    
-            <section id="research-papers">
-                <h2>Research Papers</h2>
-                <ul>
-                    <li>Tristan Carrier, Princy Victor, Ali Tekeoglu, Arash Habibi Lashkari, "Detecting Obfuscated Malware using Memory Feature Engineering", The 8th International Conference on Information Systems Security and Privacy (ICISSP), 2022 <a href="https://pdfs.semanticscholar.org/b2e2/0dc7a34753311472a5f2314fbf866d7eddd0.pdf">Research paper</a></li>
-                    <li>Iman Sharafaldin, Arash Habibi Lashkari, and Ali A. Ghorbani, "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization", 4th International Conference on Information Systems Security and Privacy (ICISSP), Portugal, January 2018 <a href="https://www.scitepress.org/papers/2018/66398/66398.pdf">Research paper</a>r</li>
-                    <li>Maryam Issakhani, Princy Victor, Ali Tekeoglu, and Arash Habibi Lashkari1, "PDF Malware Detection Based on Stacking Learning", The International Conference on Information Systems Security and Privacy, February 2022 <a href="https://www.scitepress.org/PublishedPapers/2022/109084/109084.pdf">Research paper</a></li>
-                </ul>
-                <h4>This project is licensed under the <a href="https://github.com/kmitofficial/AIToolForMalwareDetection-G96-PS23/blob/main/LICENSE"> MIT License</a>.</h4>
-            </section>
+                <div class="steps">
+                    <h2>Run locally</h2>
+                    <h4>1.Clone the project</h4>
+                    <p style="margin-left: 35px;">bash git clone https://github.com/kmitofficial/AIToolForMalwareDetection-G96-PS23.git</p>
+                    <h4>2.Add symbols</h4>
+                    <p style="margin-left: 35px;">slyfind-application\v3\volatility3\symbols</p>
+                    <p>download <a href="">symbols</a> and paste the zip in symbols folder (slyfind-application\v3\volatility3\symbols)</p>
+                    <h4>3.Go to the project directory</h4>
+                    <p style="margin-left: 35px;">cd slyfind-application</p>
+                    <h4>4.Install dependencies</h4>
+                    <p style="margin-left: 35px;">npm install</p>
+                    <h4>5.Download the requirements</h4>
+                    <p style="margin-left: 35px;">python -m pip install -r requirements.txt</p>
+                    <h4>6.Download pkl files given in website</h4>
+                    <p style="margin-left: 35px;">will be added soon :)</p>
+                    <h4>7.Start the application</h4>
+                    <p style="margin-left: 35px;">npm start</p>
+                </div>
+        
+                <section id="team">
+                    <h2>Slyfind Team</h2>
+                    <ul>
+                        <li>Akshay Nagamalla  <a href="https://github.com/AkshayNagamalla">@AkshayNagamalla</a></li>
+                        <li>Darsh Agrawal  <a href="https://github.com/DarshAgrawal14">@DarshAgrawal14</a></li>
+                        <li>Mohammed Areeb Akhter  <a href="github.com/Areeb-Ak">@Areeb-Ak</a></li>
+                        <li>Ayush Reddy Pasham   <a href="https://github.com/RahZero0">@RahZero0</a></li>
+                        <li>Sharvani K   <a href="https://github.com/Sharvani-30">@Sharvani-30</a></li>
+                        <li>Srinidhi Chodavarapu   <a href="https://github.com/Srinidhi-Chodavarapu">@Srinidhi-Chodavarapu</a></li>
+                    </ul>
+                </section>
+        
+                <section id="acknowledgements">
+                    <h2>Acknowledgements</h2>
+                    <ul>
+                        <li>We would like to acknowledge the <a href="https://www.unb.ca/cic/about/index.html">Canadian institute of Cyber Security</a> (CIC) for their valuable open-source datasets, which were pivotal in the development of this project.</li>
+                        <li>We want to express our appreciation to the creators and maintainers of the <a href="https://volatilityfoundation.org/">Volatility3 framework </a>for their invaluable open-source contribution. </li>
+                        <li>We want to express our appreciation to the developers of <a href="https://www.wireshark.org/">Wireshark</a> for providing their powerful network protocol analyzer as open-source software.</li>
+                        <li>We would like to express our heartfelt gratitude to Sripooja <a href="https://github.com/msripooja">@msripooja</a> ma'am for her invaluable guidance, support, and mentorship throughout the duration of this project.</li>
+                    </ul>
+                    
+                </section>
+        
+                <section id="research-papers">
+                    <h2>Research Papers</h2>
+                    <ul>
+                        <li>Tristan Carrier, Princy Victor, Ali Tekeoglu, Arash Habibi Lashkari, "Detecting Obfuscated Malware using Memory Feature Engineering", The 8th International Conference on Information Systems Security and Privacy (ICISSP), 2022 <a href="https://pdfs.semanticscholar.org/b2e2/0dc7a34753311472a5f2314fbf866d7eddd0.pdf">Research paper</a></li>
+                        <li>Iman Sharafaldin, Arash Habibi Lashkari, and Ali A. Ghorbani, "Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization", 4th International Conference on Information Systems Security and Privacy (ICISSP), Portugal, January 2018 <a href="https://www.scitepress.org/papers/2018/66398/66398.pdf">Research paper</a>r</li>
+                        <li>Maryam Issakhani, Princy Victor, Ali Tekeoglu, and Arash Habibi Lashkari1, "PDF Malware Detection Based on Stacking Learning", The International Conference on Information Systems Security and Privacy, February 2022 <a href="https://www.scitepress.org/PublishedPapers/2022/109084/109084.pdf">Research paper</a></li>
+                    </ul>
+                    <h4>This project is licensed under the <a href="https://github.com/kmitofficial/AIToolForMalwareDetection-G96-PS23/blob/main/LICENSE"> MIT License</a>.</h4>
+                </section>
+              </div>
         </main>
+
+        <script>
+            document.getElementById('popup-trigger').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            document.getElementById('popup-container').style.display = 'flex';
+            });
+    
+            function closePopup() {
+                document.getElementById('popup-container').style.display = 'none';
+                }
+            document.getElementById('popup-trigger').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            document.getElementById('popup-container').style.display = 'flex';
+                });
+    
+            function closePopup() {
+                document.getElementById('popup-container').style.display = 'none';
+                }
+            document.getElementById('popup-trigger-box').addEventListener('click', function(event) {
+            event.preventDefault(); 
+            document.getElementById('popup-container').style.display = 'flex';
+                });
+       </script>
     </body>
 </html>
