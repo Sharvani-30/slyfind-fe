@@ -242,12 +242,11 @@ ul.nav-items{
   margin-left: 70px;
   padding-left: 5px;
   padding-right: 5px;
-  /* background-color: #0a2472; */
   border-radius: 30px;
   z-index: 1;
 }
 
-
+/* 
 #logo {
   height: 300px;
   width: 300px;
@@ -256,7 +255,7 @@ ul.nav-items{
   margin-right: 50px;
   margin-top: 120px;
   border-radius: 20%;
-}
+} */
 
 .size {
   font-size: 36px;
@@ -444,13 +443,14 @@ p {
   }
 
 /* Responsive Styles */
-/* 
+
 @media only screen and (max-width: 400px) {
-  .slyfind .s{
-    font-size: large;
-}
-.slyfind .head{
+ 
+/* .slyfind .head{
     font-size: 10px;
+} */
+.see{
+    height: 300px;
 }
 .download{
   height: 6%;
@@ -458,25 +458,16 @@ p {
   font-size: 5px;
 }
 
+/* 
 .s{
-  margin-left: 7%;
+  margin-left: 20%;
 }
 .head{
   margin-left: 7%;
+} */
+
 }
-#logo{
-  height: 140px;
-  min-width: 140px;
-  background-size: cover;
-}
-}
-@media only screen and (max-width:500){
-  #logo{
-    height: 140px;
-    min-width: 140px;
-    background-size: cover;
-  }
-}
+
 @media only screen and (max-width: 600px) {
   .containers {
     flex-direction: column;
@@ -486,15 +477,6 @@ p {
     width: 100%;
     height: auto;
   }
-  .hello{
-    background-size: cover;
-  }
-  #logo{
-    height: 140px;
-    width: 140px;
-    background-size: cover;
-  }
-  
 }
 
 @media only screen and (max-width: 768px) {
@@ -507,18 +489,16 @@ p {
   .list{
     display: none;
   }
-  .Navbar__ToggleShow {
+  /* .Navbar__ToggleShow {
     display: flex;
-  }
+  } */
   .Navbar__Link-toggle {
     align-self: flex-end;
     display: initial;
     position: fixed;
     cursor: pointer;
    } 
-   .hello{
-    background-size: cover;
-  }
+  
   .foot {
       flex-direction: column;
       align-items: center;
@@ -542,7 +522,9 @@ p {
     top: 0;
     width: 100%;
   }
-} */
+}
+
+
 /* ------------------------------------ */
 .popup-container {
   display: none;
